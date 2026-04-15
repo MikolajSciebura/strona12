@@ -44,7 +44,7 @@ header {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     transition: padding 0.3s ease, background 0.3s ease;
     will-change: padding, background;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 header.scrolled {
@@ -100,12 +100,13 @@ nav a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 700;
-    font-size: 0.85rem; /* Slightly smaller font */
-    padding: 8px 10px; /* More compact padding */
+    font-size: 0.95rem;
+    padding: 12px 15px;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
+    display: inline-block;
 }
 
 nav a:hover, nav a.active {
@@ -146,14 +147,14 @@ nav a:hover, nav a.active {
 
 .btn-label {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     opacity: 0.9;
 }
 
 .btn-number {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .header-cta .btn-call:hover {
@@ -528,7 +529,15 @@ footer h3 {
 }
 
 .footer-info p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.footer-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
 }
 
 .footer-info i {
@@ -1282,16 +1291,16 @@ footer h3 {
 
     .hero-text h1 {
         margin-bottom: 20px;
-        font-size: 2rem;
+        font-size: 2.2rem;
         letter-spacing: 1px;
         line-height: 1.2;
     }
 
     .hero-subtext {
-        font-size: 0.95rem;
-        padding: 10px 15px;
+        font-size: 1.05rem;
+        padding: 12px 18px;
         margin-bottom: 25px;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 
     .hero-cta-buttons {
