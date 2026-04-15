@@ -44,7 +44,7 @@ header {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     transition: padding 0.3s ease, background 0.3s ease;
     will-change: padding, background;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 header.scrolled {
@@ -100,12 +100,13 @@ nav a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 700;
-    font-size: 0.85rem; /* Slightly smaller font */
-    padding: 8px 10px; /* More compact padding */
+    font-size: 0.95rem;
+    padding: 12px 15px;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
+    display: inline-block;
 }
 
 nav a:hover, nav a.active {
@@ -146,14 +147,14 @@ nav a:hover, nav a.active {
 
 .btn-label {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     opacity: 0.9;
 }
 
 .btn-number {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .header-cta .btn-call:hover {
@@ -528,7 +529,15 @@ footer h3 {
 }
 
 .footer-info p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+
+.footer-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
 }
 
 .footer-info i {
@@ -579,6 +588,65 @@ footer h3 {
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 0.8rem;
     color: #888;
+}
+
+/* SEO Content */
+.seo-content {
+    padding: 80px 0;
+    background: #050a18;
+}
+
+.seo-text-block h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.seo-text-block h3 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.seo-text-block p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #ccc;
+}
+
+.seo-text-block ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.seo-text-block li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.seo-text-block li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hero-subtext {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto 40px;
+    color: #fff;
+    max-width: 900px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.2), transparent);
+    padding: 12px 20px;
+    border-top: 1px solid rgba(255, 140, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 140, 0, 0.3);
 }
 
 /* How It Works */
@@ -1188,7 +1256,7 @@ footer h3 {
 }
 
 @media (max-width: 1024px) {
-    .hero-text h2 {
+    .hero-text h1 {
         font-size: 2.5rem;
     }
 }
@@ -1221,11 +1289,18 @@ footer h3 {
         align-items: center;
     }
 
-    .hero-text h2 {
-        margin-bottom: 25px;
-        font-size: 2.4rem; /* Slightly smaller for better fit */
-        letter-spacing: 2px;
+    .hero-text h1 {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
         line-height: 1.2;
+    }
+
+    .hero-subtext {
+        font-size: 1.05rem;
+        padding: 12px 18px;
+        margin-bottom: 25px;
+        line-height: 1.5;
     }
 
     .hero-cta-buttons {
